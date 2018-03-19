@@ -88,4 +88,3 @@ test('should set calender focus on change', () => {
   wrapper.find('SingleDatePicker').prop('onFocusChange')({ focused });
   expect(wrapper.state('calenderFocused')).toBe(focused);
 });
-
