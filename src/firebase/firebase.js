@@ -1,12 +1,12 @@
 import * as firebase from 'firebase';
 
 const config = {
-  apiKey: "AIzaSyCiP7mDEV7T1uhS5TFgOLR765sscBofjwc",
-  authDomain: "midas-def35.firebaseapp.com",
-  databaseURL: "https://midas-def35.firebaseio.com",
-  projectId: "midas-def35",
-  storageBucket: "midas-def35.appspot.com",
-  messagingSenderId: "471918701496"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.FIREBASE_DATABASE_URL,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
 };
 
 firebase.initializeApp(config);
